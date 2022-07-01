@@ -1,0 +1,106 @@
+.done {
+  width: 350px;
+  height: auto;
+  float: left;
+  background-color: rgb(235 236 240);
+  margin: 10px;
+  border-radius: 6px;
+
+  .status {
+    width: 340px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  .infoTask {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin-left: 5px;
+    margin-top: 15px;
+    border-radius: 15px;
+    height: auto;
+    background-color: white;
+    cursor: copy;
+    .title {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      font-size: 19px;
+      color: rgb(3, 94, 2);
+
+      span {
+        margin-left: 20px;
+      }
+    }
+    .priority {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 18px;
+      border-radius: 5px;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+
+      &.low {
+        background-color: rgb(36, 67, 130);
+      }
+      &.high {
+        background-color: crimson;
+      }
+      &.medium {
+        background-color: rgb(41, 126, 83);
+        width: 80px;
+      }
+    }
+    p {
+      width: 330px;
+      margin-left: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      width: 23px;
+      margin-left: 255px;
+
+      .deleteTask {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 5px;
+        background: rgb(239, 253, 253);
+        color: rgb(198, 13, 13);
+        cursor: pointer;
+      }
+
+      .edtTask {
+        width: 30px;
+        height: 30px;
+        margin-left: 70%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 5px;
+        background: rgb(243, 255, 255);
+        color: rgb(0, 45, 57);
+        cursor: pointer;
+      }
+    }
+  }
+}
